@@ -1,9 +1,22 @@
+<style>
+  .footer-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+</style>
+
 <footer class="pt-5 my-5 text-muted border-top">
-  <div class="row">
-    <div class="col-md-6 text-end social-media-icons">
-      {% for item in site.data.settings.social %}
-        <a href="{{ item.link }}" class="ms-3 fs-5"><i class="fab fa-{{ item.icon }}"></i></a>
-      {% endfor %}
-    </div>
+  <div class="footer-row">
+      <a href="https://scholar.google.com/citations?hl=en&user=U4BQukEAAAAJ"><img src="/assets/icons8-google-scholar-50.png" width=28 height=28 ></a>
+      <a href="https://twitter.com/MariaCuencaCam"><img src="/assets/twitter-117.png" width=28 height=28 ></a>
+      <a href="https://scholar.google.com/citations?hl=en&user=U4BQukEAAAAJ"><img src="/assets/orcid_logo_icon_145004.png" width=25 height=25 style="vertical-align: middle"></a>
+      <a href="https://www.instagram.com/mariquillaquilla/?hl=es"><img src="/assets/1024px-Instagram_simple_icon.svg.png" width=25 height=25 style="vertical-align: middle"></a>
   </div>
 </footer>
+
+
+
+<!-- {% for item in site.data.settings.social %} -->
+  <!-- <a href="{{ item.link }}" class="ms-3 fs-5"><i class="fab fa-{{ item.icon }}"></i></a> -->
+<!-- {% endfor %} -->
